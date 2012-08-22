@@ -12,10 +12,6 @@ entrequotes = (function(){
         // Check that we got results
         if (imageSearch.results && imageSearch.results.length > 0) {
 
-            // Grab our content div, clear it.
-            var contentDiv = document.getElementById('content');
-            contentDiv.innerHTML = '';
-
             // Loop through our results, printing them to the page.
             var result = imageSearch.results[id];
             var imgContainer = document.createElement('div');

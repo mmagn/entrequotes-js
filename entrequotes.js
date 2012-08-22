@@ -36,7 +36,7 @@ entrequotes = (function(){
             var body = document.getElementsByTagName('body') [0];
             body.appendChild(imgContainer);
             id++;
-            id = id%4;
+            id = id%7;
         }
     }
 
@@ -52,6 +52,7 @@ entrequotes = (function(){
         // Set searchComplete as the callback function when a search is 
         // complete.  The imageSearch object will have results in it.
         imageSearch.setSearchCompleteCallback(this, afficher, null);
+        imageSearch.setResultSetSize(8);
 
         // Find me a beautiful car.
         imageSearch.execute("entrecote");
